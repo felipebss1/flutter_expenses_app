@@ -142,7 +142,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 recentTransactions: _recentTransactions,
               ),
             )
-          : txListWidget
+          : txListWidget 
     ];
   }
 
