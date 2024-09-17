@@ -8,10 +8,10 @@ class AdaptativeButton extends StatelessWidget {
   final String text;
   final VoidCallback handler;
   const AdaptativeButton({
-    Key? key,
+    super.key,
     required this.text,
     required this.handler,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

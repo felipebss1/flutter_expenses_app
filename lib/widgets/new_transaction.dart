@@ -9,9 +9,9 @@ class NewTransaction extends StatefulWidget {
   final Function addTx;
 
   const NewTransaction({
-    Key? key,
+    super.key,
     required this.addTx,
-  }) : super(key: key);
+  });
 
   @override
   State<NewTransaction> createState() => _NewTransactionState();

@@ -28,7 +28,7 @@ class TransactionItem extends StatelessWidget {
           radius: 30,
           child: FittedBox(
             child: Text(
-                '\$${Numeral(transaction.amount).format()}'),
+                '\$${Numeral(transaction.amount).numeral()}'),
           ),
         ),
         title: Text(

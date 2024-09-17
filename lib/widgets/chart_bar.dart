@@ -8,11 +8,11 @@ class ChartBar extends StatelessWidget {
   final double spendingPercentTotal;
 
   const ChartBar({
-    Key? key,
+    super.key,
     required this.label,
     required this.spendingAmount,
     required this.spendingPercentTotal,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class ChartBar extends StatelessWidget {
         children: <Widget>[
           FittedBox(
             child: Text(
-              '\$${Numeral(spendingAmount).format()}',
+              '\$${Numeral(spendingAmount).numeral()}',
             ),
           ),
           SizedBox(

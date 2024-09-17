@@ -7,10 +7,10 @@ class TransactionList extends StatelessWidget {
   final List<Transaction> transactions;
   final Function deleteTx;
   const TransactionList({
-    Key? key,
+    super.key,
     required this.transactions,
     required this.deleteTx,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
